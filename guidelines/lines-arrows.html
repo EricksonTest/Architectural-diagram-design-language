@@ -1,0 +1,25 @@
+<!-- @dsCard group="Lines" viewport="700x170" name="Links" subtitle="1px hairlines, square corners, 10px arrowheads" -->
+<!DOCTYPE html>
+<html><head><meta charset="utf-8" /><link rel="stylesheet" href="../styles.css" />
+<style>
+  html,body{margin:0}
+  body{background:var(--canvas-bg);font-family:var(--font-label);color:var(--text-display);padding:18px;box-sizing:border-box}
+  .row{display:flex;gap:14px;align-items:flex-end}
+  .lbl{font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text-quiet)}
+  .mono{font-family:var(--font-mono);font-size:10px;color:var(--text-quiet)}
+  .sw{width:88px;height:56px;border-radius:3px;display:flex;align-items:flex-end;padding:6px;box-sizing:border-box}
+  .node{box-sizing:border-box;width:120px;min-height:30px;display:flex;align-items:center;justify-content:center;
+        border-radius:var(--radius-node);border:1px solid transparent;box-shadow:var(--shadow-node);
+        font-size:var(--fs-node);font-weight:var(--fw-node);letter-spacing:var(--ls-node);text-transform:uppercase;text-align:center;padding:7px 10px}
+</style></head><body>
+<svg width="640" height="110" style="overflow:visible">
+  <g stroke="var(--link)" stroke-width="1" fill="none" shape-rendering="crispEdges">
+    <line x1="20" y1="10" x2="20" y2="90"/><polygon points="15,82 25,82 20,90" fill="var(--link)" stroke="none"/>
+    <line x1="90" y1="50" x2="180" y2="50"/><polygon points="172,45 172,55 180,50" fill="var(--link)" stroke="none"/>
+    <line x1="240" y1="50" x2="330" y2="50" stroke-dasharray="4 4"/><polygon points="322,45 322,55 330,50" fill="var(--link)" stroke="none"/>
+    <g stroke="var(--link-strong)"><line x1="390" y1="10" x2="390" y2="40"/><line x1="390" y1="40" x2="600" y2="40"/><line x1="420" y1="40" x2="420" y2="88"/><line x1="560" y1="40" x2="560" y2="88"/></g>
+    <polygon points="415,80 425,80 420,88" fill="var(--link-strong)" stroke="none"/><polygon points="555,80 565,80 560,88" fill="var(--link-strong)" stroke="none"/>
+  </g>
+</svg>
+<div class="mono">down · right · dashed = conditional · bus = fan-out (strong)</div>
+</body></html>

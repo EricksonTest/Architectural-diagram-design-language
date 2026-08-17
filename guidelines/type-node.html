@@ -1,0 +1,21 @@
+<!-- @dsCard group="Type" viewport="700x150" name="Node label" subtitle="Poppins 600 / 11px / 0.07em uppercase — the workhorse" -->
+<!DOCTYPE html>
+<html><head><meta charset="utf-8" /><link rel="stylesheet" href="../styles.css" />
+<style>
+  html,body{margin:0}
+  body{background:var(--canvas-bg);font-family:var(--font-label);color:var(--text-display);padding:18px;box-sizing:border-box}
+  .row{display:flex;gap:14px;align-items:flex-end}
+  .lbl{font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text-quiet)}
+  .mono{font-family:var(--font-mono);font-size:10px;color:var(--text-quiet)}
+  .sw{width:88px;height:56px;border-radius:3px;display:flex;align-items:flex-end;padding:6px;box-sizing:border-box}
+  .node{box-sizing:border-box;width:120px;min-height:30px;display:flex;align-items:center;justify-content:center;
+        border-radius:var(--radius-node);border:1px solid transparent;box-shadow:var(--shadow-node);
+        font-size:var(--fs-node);font-weight:var(--fw-node);letter-spacing:var(--ls-node);text-transform:uppercase;text-align:center;padding:7px 10px}
+</style></head><body>
+<div class="row">
+  <div class="node" style="background:#fff;color:var(--node-primary-ink);border-color:var(--node-primary-border)">Log in screen</div>
+  <div class="node" style="background:#fff;color:var(--navy-900);font-size:var(--fs-node-sm);letter-spacing:var(--ls-node-sm)">Current case numbers</div>
+  <div class="node" style="background:var(--node-content-fill);color:var(--node-content-ink);font-size:var(--fs-node-sm);letter-spacing:var(--ls-node-sm)">Personal QR code</div>
+</div>
+<div class="mono" style="margin-top:12px">--fs-node 11px · --fs-node-sm 9.5px · always uppercase, never below 9.5px</div>
+</body></html>

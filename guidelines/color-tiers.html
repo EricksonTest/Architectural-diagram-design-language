@@ -1,0 +1,22 @@
+<!-- @dsCard group="Colors" viewport="700x170" name="Node tiers" subtitle="Fill + ink pairs that carry hierarchy meaning" -->
+<!DOCTYPE html>
+<html><head><meta charset="utf-8" /><link rel="stylesheet" href="../styles.css" />
+<style>
+  html,body{margin:0}
+  body{background:var(--canvas-bg);font-family:var(--font-label);color:var(--text-display);padding:18px;box-sizing:border-box}
+  .row{display:flex;gap:14px;align-items:flex-end}
+  .lbl{font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text-quiet)}
+  .mono{font-family:var(--font-mono);font-size:10px;color:var(--text-quiet)}
+  .sw{width:88px;height:56px;border-radius:3px;display:flex;align-items:flex-end;padding:6px;box-sizing:border-box}
+  .node{box-sizing:border-box;width:120px;min-height:30px;display:flex;align-items:center;justify-content:center;
+        border-radius:var(--radius-node);border:1px solid transparent;box-shadow:var(--shadow-node);
+        font-size:var(--fs-node);font-weight:var(--fw-node);letter-spacing:var(--ls-node);text-transform:uppercase;text-align:center;padding:7px 10px}
+</style></head><body>
+<div class="row" style="align-items:flex-start;flex-wrap:wrap">
+  <div><div class="node" style="background:var(--node-primary-fill);color:var(--node-primary-ink);border-color:var(--node-primary-border)">Main screen</div><div class="lbl" style="margin-top:6px">primary</div></div>
+  <div><div class="node" style="background:var(--node-secondary-fill);color:var(--node-secondary-ink)">On-screen</div><div class="lbl" style="margin-top:6px">secondary</div></div>
+  <div><div class="node" style="background:var(--node-content-fill);color:var(--node-content-ink)">Content</div><div class="lbl" style="margin-top:6px">content</div></div>
+  <div><div class="node" style="background:var(--node-terminal-fill);color:var(--node-terminal-ink)">Push service</div><div class="lbl" style="margin-top:6px">terminal</div></div>
+  <div><div class="node" style="background:var(--node-ghost-fill);color:var(--node-ghost-ink);border-color:var(--node-ghost-border)">Phase 2</div><div class="lbl" style="margin-top:6px">ghost</div></div>
+</div>
+</body></html>

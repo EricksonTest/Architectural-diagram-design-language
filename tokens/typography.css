@@ -1,0 +1,34 @@
+:root {
+  --font-display: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-label: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: "Fira Code", "SFMono-Regular", Menlo, Consolas, monospace;
+
+  /* board title — heavy, tight, two lines by design */
+  --fs-title: 54px;
+  --lh-title: 1.04;
+  --fw-title: 800;
+  --ls-title: -0.02em;
+
+  --fs-title-sm: 34px;
+  --fs-subtitle: 14px;
+  --ls-subtitle: 0.14em;
+
+  /* node labels — uppercase micro type, the workhorse */
+  --fs-node: 11px;
+  --lh-node: 1.25;
+  --fw-node: 600;
+  --ls-node: 0.07em;
+
+  --fs-node-sm: 9.5px;
+  --ls-node-sm: 0.09em;
+
+  /* frame + legend labels */
+  --fs-legend: 10px;
+  --fw-legend: 700;
+  --ls-legend: 0.16em;
+
+  /* annotations */
+  --fs-caption: 11px;
+  --lh-caption: 1.45;
+  --ls-caption: 0.01em;
+}

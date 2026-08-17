@@ -1,0 +1,20 @@
+:root {
+  --radius-node: 3px;
+  --radius-frame: 12px;
+  --radius-pill: 999px;
+
+  --border-node: 1px;
+  --link-w: 1px;
+  --dash-frame: 5 5;
+
+  --shadow-node: 0 1px 2px rgba(7, 31, 61, 0.18);
+  --shadow-node-raised: 0 4px 14px rgba(7, 31, 61, 0.22);
+  --shadow-none: none;
+
+  --ease: cubic-bezier(0.2, 0.7, 0.3, 1);
+  --dur-fast: 120ms;
+  --dur: 200ms;
+
+  --hover-lift: translateY(-1px);
+  --press-scale: scale(0.985);
+}

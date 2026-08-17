@@ -1,0 +1,48 @@
+<!-- @dsCard group="Components" viewport="700x300" name="Board, title, frame & legend" subtitle="Blue ground, heavy title, grouping frame, tier key" -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../../styles.css" />
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../ds-preview.js"></script>
+<style>html,body{margin:0;background:#eef2f6;font-family:var(--font-label)}</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/jsx" id="demo-src">
+const { DiagramBoard, BoardTitle, GroupFrame, Legend, DiagramNode } = NS;
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <DiagramBoard width={700} height={300} padding="20px">
+    <div style={{ display: "flex", gap: 20 }}>
+      <BoardTitle size="sm" kicker="Aperture" title={"Information\narchitecture"} meta="rev 04" />
+      <GroupFrame title="Authenticated shell" padding="18px" style={{ flex: 1 }}>
+        <div style={{ display: "flex", gap: 10 }}>
+          <DiagramNode tier="primary" label="Home" width={92} />
+          <DiagramNode tier="secondary" label="Feed" width={92} />
+          <DiagramNode tier="content" label="Article" width={92} />
+        </div>
+      </GroupFrame>
+    </div>
+    <Legend
+      style={{ position: "absolute", right: 20, bottom: 18 }}
+      items={[
+        { tier: "primary", label: "Main screens", width: 84 },
+        { tier: "secondary", label: "On-screen", width: 84 },
+        { tier: "content", label: "Content", width: 84 },
+      ]}
+    />
+  </DiagramBoard>
+);
+</script>
+<script>
+dsComponents("../../").then(function (NS) {
+  var src = document.getElementById("demo-src").textContent;
+  var code = Babel.transform(src, { presets: [["react", { runtime: "classic" }]] }).code;
+  new Function("React", "ReactDOM", "NS", code)(React, ReactDOM, NS);
+});
+</script>
+</body>
+</html>

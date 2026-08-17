@@ -1,0 +1,79 @@
+:root {
+  /* --- base ramp: one hue, ten steps ------------------------------------ */
+  --blue-050: #eaf4ff;
+  --blue-100: #d5eaff;
+  --blue-200: #c3e1ff;
+  --blue-300: #b1d8ff;   /* content-screen fill, sampled from reference */
+  --blue-400: #6bb8ff;
+  --blue-500: #3499ff;   /* THE canvas blue, sampled from reference */
+  --blue-600: #1f86f5;
+  --blue-700: #0f6ad0;
+  --blue-800: #0b4f9e;
+  --navy-900: #0a2f5c;
+  --navy-950: #071f3d;
+  --white: #ffffff;
+
+  /* --- canvas ----------------------------------------------------------- */
+  --canvas-bg: var(--blue-500);
+  --canvas-bg-deep: var(--navy-900);      /* alternate dark board */
+  --canvas-bg-light: var(--blue-050);     /* alternate paper board */
+
+  /* --- node tiers ------------------------------------------------------- */
+  --node-primary-fill: var(--white);
+  --node-primary-ink: var(--blue-600);
+  --node-primary-border: var(--blue-500);
+
+  --node-secondary-fill: var(--white);
+  --node-secondary-ink: var(--navy-900);
+  --node-secondary-border: transparent;
+
+  --node-content-fill: var(--blue-300);
+  --node-content-ink: var(--blue-700);
+  --node-content-border: transparent;
+
+  --node-terminal-fill: var(--navy-900);
+  --node-terminal-ink: var(--white);
+  --node-terminal-border: transparent;
+
+  --node-ghost-fill: rgba(255, 255, 255, 0.14);
+  --node-ghost-ink: var(--white);
+  --node-ghost-border: rgba(255, 255, 255, 0.55);
+
+  /* --- lines, frames, type --------------------------------------------- */
+  --link: rgba(255, 255, 255, 0.72);
+  --link-strong: var(--white);
+  --link-quiet: rgba(255, 255, 255, 0.4);
+  --frame-border: rgba(255, 255, 255, 0.55);
+  --divider-on-node: var(--blue-100);
+
+  --text-display: var(--white);
+  --text-body: rgba(255, 255, 255, 0.9);
+  --text-quiet: rgba(255, 255, 255, 0.62);
+  --text-on-light: var(--navy-900);
+}
+
+/* Dark board: same components, deeper ground. */
+[data-board="deep"] {
+  --canvas-bg: var(--navy-900);
+  --node-primary-ink: var(--blue-700);
+  --node-content-fill: var(--blue-800);
+  --node-content-ink: var(--blue-200);
+  --node-terminal-fill: var(--blue-500);
+  --link: rgba(255, 255, 255, 0.55);
+}
+
+/* Paper board: for print / light decks. */
+[data-board="paper"] {
+  --canvas-bg: var(--blue-050);
+  --node-primary-fill: var(--white);
+  --node-primary-ink: var(--blue-700);
+  --node-secondary-ink: var(--navy-900);
+  --node-content-fill: var(--blue-200);
+  --node-content-ink: var(--blue-800);
+  --link: rgba(10, 47, 92, 0.45);
+  --link-strong: var(--navy-900);
+  --frame-border: rgba(10, 47, 92, 0.3);
+  --text-display: var(--navy-900);
+  --text-body: rgba(10, 47, 92, 0.85);
+  --text-quiet: rgba(10, 47, 92, 0.55);
+}

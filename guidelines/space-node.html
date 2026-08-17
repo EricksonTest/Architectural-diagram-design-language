@@ -1,0 +1,21 @@
+<!-- @dsCard group="Spacing" viewport="700x170" name="Node geometry" subtitle="132×30 default, 10/7 padding, 3px radius" -->
+<!DOCTYPE html>
+<html><head><meta charset="utf-8" /><link rel="stylesheet" href="../styles.css" />
+<style>
+  html,body{margin:0}
+  body{background:var(--canvas-bg);font-family:var(--font-label);color:var(--text-display);padding:18px;box-sizing:border-box}
+  .row{display:flex;gap:14px;align-items:flex-end}
+  .lbl{font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text-quiet)}
+  .mono{font-family:var(--font-mono);font-size:10px;color:var(--text-quiet)}
+  .sw{width:88px;height:56px;border-radius:3px;display:flex;align-items:flex-end;padding:6px;box-sizing:border-box}
+  .node{box-sizing:border-box;width:120px;min-height:30px;display:flex;align-items:center;justify-content:center;
+        border-radius:var(--radius-node);border:1px solid transparent;box-shadow:var(--shadow-node);
+        font-size:var(--fs-node);font-weight:var(--fw-node);letter-spacing:var(--ls-node);text-transform:uppercase;text-align:center;padding:7px 10px}
+</style></head><body>
+<div class="row" style="align-items:center;gap:20px">
+  <div><div class="node" style="width:104px">104 narrow</div></div>
+  <div><div class="node" style="width:132px">132 default</div></div>
+  <div><div class="node" style="width:168px">168 wide</div></div>
+</div>
+<div class="mono" style="margin-top:14px">--node-w 132 · --node-w-narrow 104 · --node-w-wide 168 · --node-h 30 · --radius-node 3</div>
+</body></html>

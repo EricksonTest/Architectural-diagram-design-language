@@ -1,0 +1,26 @@
+:root {
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+  --sp-8: 64px;
+  --sp-9: 96px;
+
+  /* node geometry — every box on a board shares one width per column */
+  --node-w: 132px;
+  --node-w-wide: 168px;
+  --node-w-narrow: 104px;
+  --node-h: 30px;
+  --node-pad-x: 10px;
+  --node-pad-y: 7px;
+
+  /* board rhythm */
+  --stack-gap: 0px;      /* contiguous stacks: hairline divider, no gap */
+  --row-gap: 20px;       /* sibling boxes down a column */
+  --col-gap: 56px;       /* between columns */
+  --branch-drop: 34px;   /* trunk-to-node drop */
+  --board-pad: 56px;
+}
